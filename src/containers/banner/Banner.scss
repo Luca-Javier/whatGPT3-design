@@ -1,0 +1,157 @@
+$h1-font-size: 62px;
+.banner {
+  display: flex;
+
+  &-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+
+    h1 {
+      font-weight: 800;
+      font-size: $h1-font-size;
+      line-height: 75px;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 27px;
+      color: var(--color-text);
+      margin-top: 1.5rem;
+    }
+
+    &__input {
+      width: 100%;
+      margin: 2rem 0 1rem;
+      display: flex;
+
+      input {
+        flex: 2;
+        width: 100%;
+        min-height: 50px;
+        background-color: var(--color-footer);
+        border: 2px solid var(--color-footer);
+        border-radius: 5px 0 0 5px;
+        padding: 0 1rem;
+        outline: none;
+        color: white;
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      button {
+        flex: 0.6;
+        height: 73px;
+        background: #ff4820;
+        border-radius: 0px 5px 5px 0px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #ffffff;
+        outline: none;
+        cursor: pointer;
+        padding: 0 1rem;
+        border: none;
+      }
+    }
+
+    &__people {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2rem;
+
+      img {
+        width: 181.79px;
+        height: 38px;
+      }
+
+      p {
+        margin: 0;
+        margin-left: 1rem;
+        font-weight: 500;
+        line-height: 32px;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+  }
+
+  &-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    flex-direction: column;
+
+    &-content {
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+
+    h1 {
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-content {
+      &__people {
+        flex-direction: column;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      &__input {
+        input,
+        button {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    h1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &-content__input {
+      input,
+      button {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

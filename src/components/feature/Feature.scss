@@ -1,0 +1,15 @@
+.feature {
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1rem;
+  }
+
+  &__heading {
+    h1 {
+      flex: 1;
+    }
+  }
+}

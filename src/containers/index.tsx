@@ -1,0 +1,6 @@
+export { default as Blog } from "./blog"
+export { default as Features } from "./features"
+export { default as Footer } from "./footer"
+export { Banner } from "./banner"
+export { default as WhatGPT3 } from "./whatGPT3"
+export { default as Possibility } from "./possibility"
