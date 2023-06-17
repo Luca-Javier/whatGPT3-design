@@ -69,7 +69,7 @@ function NavLinks() {
         <a href="#features">Case Studies</a>
       </p>
       <p>
-        <a href="#bloh">Library</a>
+        <a href="#blog">Library</a>
       </p>
     </>
   )

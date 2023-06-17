@@ -1,0 +1,55 @@
+.blog
+  display: flex
+  flex-direction: column
+
+  &-heading
+    margin-bottom: 5rem
+
+    h1
+      font-weight: 800
+      font-size: 62px
+      line-height: 75px
+      letter-spacing: -0.04em
+
+  &-container
+    display: flex
+    flex-direction: row
+
+    &__article
+      flex: 0.7
+      margin-right: 2rem
+
+    &__articles
+      flex: 1
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 2rem
+
+  @media screen and (max-width: 990px) 
+    &-heading 
+      margin-bottom: 3rem
+      
+      h1
+        font-size: 42px
+        line-height: 50px
+
+  &-container  
+    flex-direction: column-reverse
+
+  &-container__article
+    margin-right: 0
+    margin-top: 2rem
+
+  @media screen and (max-width: 700px)
+    &-heading 
+      margin-bottom: 3rem
+      
+      h1
+        font-size: 34px
+        line-height: 42px
+
+    &-container__articles
+      grid-template-columns: repeat(1, 1fr)
+  
+   
+  

@@ -18,7 +18,7 @@ function App() {
       </div>
       <Brand />
       <WhatGPT3 />
-      <Features />
+      <Features  />
       <Possibility />
       <CTAction />
       <Blog />

@@ -1,0 +1,38 @@
+.article
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: column
+  background: var(--color-footer)
+
+  &-image img
+    width: 100%
+
+  &-content
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    padding: 1rem
+
+    color: white
+
+    p
+      font-weight: 700
+      font-size: 11.649px
+      line-height: 35px
+      
+
+    h3
+      font-weight: 800
+      font-size: 19.3154px
+      line-height: 30px
+      margin-bottom: 5rem
+
+  @media screen and (max-width: 550px) 
+    &-content h3
+      font-size: 18px
+      line-height: 24px
+  
+   

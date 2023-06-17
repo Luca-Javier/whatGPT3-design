@@ -1,14 +1,10 @@
+import { IFeature } from "../../models"
 import "./Feature.scss"
 
-interface IFeature {
-  title: string
-  text: string
-}
-
-function Feature({ title, text }: IFeature) {
+function Feature({ title, text, flexColumn = false }: IFeature) {
   return (
-    <div className="feature-container">
-      <div className="feature__heading">
+    <div className={`feature-container ${flexColumn && "flex-column"}`}>
+      <div className="feature-heading">
         <div />
         <h1>{title}</h1>
       </div>

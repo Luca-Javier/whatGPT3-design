@@ -5,7 +5,7 @@ function Brand() {
   return (
     <div className="brand section__padding">
       {assets.map(({ alt, src }) => (
-        <div>
+        <div key={src}>
           <img src={src} alt={alt} />
         </div>
       ))}

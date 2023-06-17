@@ -1,2 +1,2 @@
-import Feature from "../../components/feature"
+import Feature from "./Features"
 export default Feature
